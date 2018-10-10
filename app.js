@@ -15,7 +15,7 @@ const client = new Snoostorm(snoowrapConfig);
 
 // configure options for stream
 const streamOpts = {
-  subreddit: "all",
+  subreddit: "testingground4bots",
   results: 25
 };
 
@@ -24,5 +24,7 @@ const comments = client.CommentStream(streamOpts);
 
 // on comment, perform logic
 comments.on("comment", comment => {
-  console.log(comment);
+  if (comment.body === ":(") {
+    comment.reply(":)");
+  }
 });
