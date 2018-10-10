@@ -1,6 +1,15 @@
 # node-reddit-bot
 Using node, dotenv, Snoowrap and Snoostorm
 
+### You need a reddit account and to create an app to obtain the relevant keys - https://www.reddit.com/prefs/apps/
+
+Config should be setup as follows:
+```
+CLIENT_ID=***
+CLIENT_SECRET=***
+REDDIT_USER=***
+REDDIT_PASS=***
+```
 
 Run the app using ``` node app.js ```
 
